@@ -6,17 +6,21 @@ This project is based on ceserver-pcileech by Isabella Flores, I have added the 
 - [Support Vmware]
 
 # How to use?
-1. Install [ceserver-pcileech-1.5.msi], Cheat Engine v7.4, and download MemProcFS v5.8.1
-2. Copy [ceserver_adapter.dll] to your MemProcFS folder.(THIS IS IMPORTANT)
+1. Install `ceserver-pcileech-1.5.msi`, `Cheat Engine v7.4`, and download `MemProcFS v5.8.1`
+2. Copy `ceserver_adapter.dll` to your MemProcFS folder.(THIS IS IMPORTANT)
 3. Continue with "Running the Server" section below
+# Notes:
+If you are running multiple virtual machines, specify the id in the args like `-device vmware://id=14124`
+
+Get your id with this command: `MemProcFS.exe -device vmware`
 
 # How to build?
 * The precompiled executable file is already provided, but you can also build it yourself.
 
-1. Install jdk-17.0.1, apache-maven-3.8.4, WiX Toolset v3.11  (Other versions should work as well, but I haven't tested).
-2. Edit the [scripts\env.cmd] file and set the environment.
-3. Run [scripts\make-exe.cmd] to build jar and msi, the first build will take some time to download resoureces.
-4. If everything is ok, you will find the [ceserver-pcileech-1.5.msi] file in the [target\jpackage-out] folder.
+1. Install `jdk-17.0.1`, `apache-maven-3.8.4`, `WiX Toolset v3.11`  (Other versions should work as well, but I haven't tested).
+2. Edit the `scripts\env.cmd` file and set the environment.
+3. Run `scripts\make-exe.cmd` to build jar and msi, the first build will take some time to download resoureces.
+4. If everything is ok, you will find the `ceserver-pcileech-1.5.msi` file in the `target\jpackage-out` folder.
 
 The following is the original project description. repository had deleted by the way.
 
